@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Labo_2_Opdracht_8_Yamen</title>
+</head>
+<body>
+<h1>Labo_2_Opdracht_8_Yamen</h1>
+<p>
+  Veronderstel een HTML document met daarin, o.a.,
+  &ltspan&gthier komt een&lt/span&gt&lta href=""&gtlink&lt/a>&ltspan&gt te staan&lt/span&gt
+  <br>
+  (Terzijde: is een spatie net voor het woord "te" eigenlijk nodig? Probeer eens uit!)
+  <br>
+  <br>
+  In HTML negeert de browser meestal extra spaties. Het ziet wel beter uit.
+  <br>
+  <br>
+  <br>
+  De auteur beslist plots dat de tekst "een link" benadrukt moet worden dmv. een <strong> element en verandert bovenstaande naar:
+  <br>
+  &ltspan&gthier komt &ltstrong&gteen&lt/span&gt&lta href=""&gtlink&lt/a&gt&lt/strong&gt&ltspan&gt te staan&lt/span&gt
+  <br>
+  <br>
+  Waarom is dit niet correct, en hoe moet het dan wel?
+
+  <br>
+  <br>
+  Onjuiste nesting: De &ltstrong>-tag sluit vóór de &lta>-tag. Dit betekent dat de HTML-structuur niet correct genest is.
+    <br>
+    De browser kan de tekst "een link" niet als één geheel beschouwen, omdat de &ltstrong&gt-tag niet de volledige inhoud bevat die je wilt benadrukken.
+<br>
+    <br>
+    Verlies van opmaak: Door de &ltstrong>-tag incorrect te sluiten, krijgen alleen "een" en niet "link" de opmaak.
+     <br>   Hierdoor wordt de intentie om "een link" als één geheel te benadrukken niet bereikt.
+
+
+
+</p>
+
+
+</body>
+</html>
