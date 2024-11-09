@@ -1,0 +1,22 @@
+
+.checklist {
+    list-style-type: none;
+    padding: 0;
+}
+
+.checklist li {
+    padding: 5px 0;
+    position: relative;
+}
+
+.checklist li.checked::before {
+    content: "☑";
+    position: absolute;
+    left: -20px;
+}
+
+.checklist li:not(.checked)::before {
+    content: "☐";
+    position: absolute;
+    left: -20px;
+}
