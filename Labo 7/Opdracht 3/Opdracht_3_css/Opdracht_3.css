@@ -1,0 +1,13 @@
+tr.alt {
+    background-color: #f2f2f2;
+}
+
+
+.onbekend {
+    background-color: red;
+}
+
+
+tr.alt td.onbekend {
+    background-color: red;
+}

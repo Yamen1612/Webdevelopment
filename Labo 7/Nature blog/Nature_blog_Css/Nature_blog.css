@@ -1,0 +1,84 @@
+
+body {
+    font-family: Arial, sans-serif;
+    width: 95%;
+    margin: auto;
+}
+
+section {
+    width: 99%;
+    margin: auto;
+}
+
+
+#img {
+    background: url("../Img/header.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 80px;
+    color: white;
+}
+
+.Linksboven {
+    text-align: left;
+    font-size: 70px;
+    text-decoration: none;
+}
+
+header h1 {
+    font-size: 50px;
+    text-decoration: underline;
+    margin: 0;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+
+}
+
+nav a {
+    color: lawngreen;
+    margin: 0 15px;
+    font-size: 30px;
+}
+
+header {
+    background-color: #dddddd;
+    padding: 40px;
+}
+
+
+article {
+    background-color: #dddddd;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+
+article p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 22px;
+}
+
+article footer a {
+    color: #007acc;
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+
+article footer a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    padding: 10px;
+    color: #666;
+    margin-top: 5px;
+    border-top: 1px solid #ddd;
+}
