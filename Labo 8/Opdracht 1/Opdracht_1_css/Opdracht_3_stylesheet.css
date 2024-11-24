@@ -1,0 +1,41 @@
+div {
+    text-align:center;
+}
+
+.area {
+    width:100px;
+    height:100px;
+    background:red;
+    display:inline-block;
+}
+
+.tall {
+    height:150px;
+}
+
+.short {
+    height:50px;
+}
+
+.floaty{
+    float:left;
+    background:green;
+}
+
+.break {
+    clear:both;
+    background:blue;
+}
+
+.vertical {
+    width:100px;
+    height:300px;
+}
+.horizontal {
+    width:300px;
+    height:100px;
+}
+
+.highlight {
+    font-weight:bold;
+}
