@@ -1,0 +1,147 @@
+body {
+    width: 95%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+div.top {
+    height: 200px;
+    background-image: url('../images/bgsky3.jpg');
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: darkblue;
+}
+
+div.top p:first-of-type {
+    font-size: 300%;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+}
+
+div.top p:last-of-type {
+    font-size: 240%;
+    font-weight: bold;
+    margin-top: 60px;
+}
+
+div.top img {
+    position: absolute;
+    bottom: 60px;
+    right: 250px;
+    z-index: 1;
+}
+
+div.news {
+    float: right;
+    width: 25%;
+    background-color: #dddddd;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+}
+
+div.news h3 {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 120%;
+    margin: 0;
+    padding: 10px;
+}
+
+div.news p {
+    color: #666666;
+    font-size: 90%;
+    margin: 10px;
+    line-height: 1.5;
+}
+
+div.main {
+    float: left;
+    width: 75%;
+    background-color: white;
+
+}
+
+div.main p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.blauwCursief {
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+div.main img {
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+div.gallery {
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: #999999;
+}
+
+div.gallery .foto {
+    height: 180px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex: 1 1 calc(33.33% - 20px);
+    box-sizing: border-box;
+}
+
+div.gallery .foto img {
+    max-width: 100%;
+    max-height: 100%;
+    outline: white 10px solid;
+
+}
+
+div.bottom {
+    clear: both;
+    background-color: #666666;
+    color: white;
+    padding: 20px;
+    line-height: 2em;
+    text-align: left;
+}
+
+.Blokken{
+    display: inline-block;
+}
+
+.left {
+    text-align: left;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+li a {
+    color: white;
+}
+
+li a:hover {
+    color: red;
+}
+
+.copyright {
+    text-align: center;
+    color: black;
+    background-color: white;
+}
