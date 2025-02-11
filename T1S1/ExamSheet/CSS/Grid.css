@@ -1,0 +1,79 @@
+/* CSS Grid Samenvatting */
+
+/* 1. Grid-container activeren */
+.container {
+    display: grid; /* Zet de container om in een grid-layout */
+}
+
+/* 2. Kolommen en rijen definiëren */
+.container {
+    grid-template-columns: 100px 1fr 2fr; /* Kolommen: vaste, flexibele en dubbele breedte */
+    grid-template-rows: 50px auto; /* Rijen: vaste hoogte en automatische ruimte */
+}
+
+/* 3. Ruimte tussen items */
+.container {
+    gap: 10px; /* Ruimte tussen rijen en kolommen */
+    row-gap: 15px; /* Alleen rij-afstand */
+    column-gap: 5px; /* Alleen kolom-afstand */
+}
+
+/* 4. Plaatsen van items */
+.item1 {
+    grid-column: 1 / 3; /* Item beslaat kolom 1 t/m 2 */
+    grid-row: 1 / 2; /* Item beslaat rij 1 */
+}
+
+/* Alternatieve schrijfwijze */
+.item2 {
+    grid-area: 2 / 1 / 3 / 4; /* Rij-start / Kolom-start / Rij-eind / Kolom-eind */
+}
+
+/* 5. Automatische plaatsing */
+.container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Flexibele kolommen */
+}
+
+/* 6. Grid-lijnen benoemen */
+.container {
+    grid-template-columns: [start] 100px [middle] 1fr [end]; /* Lijnen met namen */
+}
+
+.item3 {
+    grid-column: start / end; /* Plaatst item tussen benoemde lijnen */
+}
+
+/* 7. Uitlijning binnen cellen */
+.container {
+    justify-items: center; /* Horizontale uitlijning */
+    align-items: stretch; /* Verticale uitlijning */
+    place-items: center; /* Combineert beide */
+}
+
+/* 8. Uitlijning van het hele grid */
+.container {
+    justify-content: space-between; /* Horizontale uitlijning van het grid */
+    align-content: center; /* Verticale uitlijning van het grid */
+    place-content: center; /* Combineert beide */
+}
+
+/* 9. Grid-gebieden */
+.container {
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer"; /* Definieert gebieden */
+}
+
+.header {
+    grid-area: header;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+.main {
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+}

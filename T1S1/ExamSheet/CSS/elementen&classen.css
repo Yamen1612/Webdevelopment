@@ -1,0 +1,68 @@
+/* CSS Samenvatting met Voorbeelden */
+
+/* 1. Een element stylen */
+p {
+    color: blue; /* Alle <p>-elementen worden blauw */
+}
+
+/* 2. Meerdere elementen tegelijk stylen */
+p, a {
+    font-size: 16px; /* Zowel <p> als <a>-elementen krijgen dezelfde tekstgrootte */
+}
+
+/* 3. Een klasse stylen */
+.voorbeeld {
+    background-color: yellow; /* Elk element met class="voorbeeld" krijgt een gele achtergrond */
+}
+
+/* 4. Meerdere klassen toepassen op één element */
+.tekst-bold {
+    font-weight: bold; /* Maakt tekst vet */
+}
+
+.tekst-rood {
+    color: red; /* Maakt tekst rood */
+}
+
+/* HTML Voorbeeld:
+<div class="tekst-bold tekst-rood">Inhoud</div>
+*/
+
+/* 5. Een ID stylen */
+#specifiek {
+    border: 2px solid black; /* Specifiek element met id="specifiek" krijgt een zwarte rand */
+}
+
+/* 6. Elementen binnen een ander element stylen */
+div p {
+    color: green; /* Alleen <p> binnen een <div> krijgt een groene kleur */
+}
+
+div.top p:first-of-type {
+    color: red; /* Alleen de eerste <p> in elke dif met class .top wordt rood */
+}
+
+
+/* 7. Alleen een specifiek element binnen een container */
+div > p {
+    text-decoration: underline; /* Alleen directe kinderen <p> van <div> worden onderstreept */
+}
+
+/* 8. Een element met een bepaalde klasse binnen een ander element */
+div .special {
+    background-color: lightblue; /* Alleen elementen met class="special" binnen een <div> krijgen een blauwe achtergrond */
+}
+
+/* 9. Pseudoklassen gebruiken */
+a:hover {
+    text-decoration: none; /* Links krijgen geen onderstreping bij hover */
+}
+
+/* 10. Meerdere stijlen combineren */
+h1, h2 {
+    text-align: center; /* Zowel <h1> als <h2> worden gecentreerd */
+}
+
+ul li {
+    margin: 5px; /* Alleen <li>-items binnen een <ul> krijgen marge */
+}
