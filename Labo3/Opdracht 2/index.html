@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Demonstratie slider</title>
+	<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+	<link rel="stylesheet" href="styles/styles.css"/>
+</head> 
+<body> 
+<section>
+	<p>Open het console venster, versleep daarna de slider hieronder en kijk welke berichten er komen</p>
+	<input type="range" class="slider" value="50" min="0" max="100" />
+</section>
+<section>
+<p>Een gekleurd blokje :</p>
+<div class="colorDemo" />
+</section>
+
+<h1>Antwoorden op Vragen</h1>
+
+<p>
+	<strong>1. Waar wordt de event listener gekoppeld aan de slider?</strong>
+	De event listener wordt in de JavaScript-code aan het eerste slider-element gekoppeld met <code>sliders[0].addEventListener("change", update)</code> en <code>sliders[0].addEventListener("input", update)</code>.
+</p>
+
+<p>
+	<strong>2. Waarom moeten we die op twee soorten events koppelen?</strong>
+	Zodat we zowel continue updates tijdens het slepen (input) als een definitieve update bij loslaten (change) krijgen.
+</p>
+
+<p>
+	<strong>3. In de CSS file wordt nergens een rode kleur opgegeven, waar wordt dan wel de rode kleur van het blokje ingesteld?</strong>
+	De rode kleur wordt programmatorisch ingesteld via JavaScript met <code>colorDemos[0].style.backgroundColor = "red"</code>.
+</p>
+
+<p>
+	<strong>4. Waarom schrijven we telkens sliders[0] en colorDemos[0] en niet gewoon sliders of colorDemos?</strong>
+	Omdat <code>getElementsByClassName</code> een collectie teruggeeft en we het eerste (en enige) element uit die collectie willen gebruiken.
+</p>
+
+<p>
+	<strong>5. Waar vind je de CSS-properties die programmatorisch werden ingesteld?</strong>
+	Deze worden als inline styles weergegeven onder het gedeelte <em>element.style</em> in de Developer Tools.
+</p>
+</body> 
+</html> 
