@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulier Elementen</title>
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<h1>Opdracht</h1>
+<p>Ontwerp een formulier dat de volgende gegevens opvraagt:</p>
+
+<form action="#" method="post">
+	<fieldset>
+		<legend>Personal Information</legend>
+		<label for="first-name">First name*:</label>
+		<input type="text" id="first-name" name="first-name" required autofocus>
+		<label for="last-name">Last name*:</label>
+		<input type="text" id="last-name" name="last-name" required>
+	</fieldset>
+
+	<fieldset>
+		<legend>Sports</legend>
+		<p>Which sport do you train?</p>
+		<input type="checkbox" id="running" name="sport" value="running">
+		<label for="running">Running</label>
+		<input type="checkbox" id="swimming" name="sport" value="swimming">
+		<label for="swimming">Swimming</label>
+		<input type="checkbox" id="rowing" name="sport" value="rowing">
+		<label for="rowing">Rowing</label>
+	</fieldset>
+
+	<fieldset>
+		<legend>Gender</legend>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label>
+		<input type="radio" id="other" name="gender" value="other">
+		<label for="other">Other / Prefer not to say</label>
+	</fieldset>
+
+	<fieldset>
+		<legend>Favorites</legend>
+		<label for="fav-movie">Favorite movie:</label>
+		<input type="text" id="fav-movie" name="fav-movie">
+
+		<label for="fav-food">Favorite food:</label>
+		<select id="fav-food" name="fav-food">
+			<option value="pizza">Pizza</option>
+			<option value="pasta">Pasta</option>
+			<option value="sushi">Sushi</option>
+		</select>
+
+		<label for="fav-color">Choose a favorite color:</label>
+		<input type="color" id="fav-color" name="fav-color">
+	</fieldset>
+
+	<fieldset>
+		<legend>Security & Contact</legend>
+		<label for="email">Email address:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="password">Password*:</label>
+		<input type="password" id="password" name="password" required>
+	</fieldset>
+
+	<fieldset>
+		<legend>Additional Information</legend>
+		<label for="fav-number">Favorite number (1-100):</label>
+		<input type="number" id="fav-number" name="fav-number" min="1" max="100">
+
+		<label for="birth-year">Which year were you born?</label>
+		<input type="number" id="birth-year" name="birth-year" min="1900" max="2024">
+	</fieldset>
+
+	<fieldset>
+		<legend>Miscellaneous</legend>
+		<label for="upload-file">Upload a file:</label>
+		<input type="file" id="upload-file" name="upload-file">
+
+		<label for="fav-color">What is your favorite color?</label>
+		<input type="color" name="fav-color">
+	</fieldset>
+
+	<button type="submit">Submit</button>
+</form>
+<script defer src="scripts/code.js"></script>
+</body>
+</html>
